@@ -1,6 +1,6 @@
 for f in $@
 do 
-    echo "FASTA File_Statistic" # Header 
+    echo "FASTA File_Statistic" # Header + changes 
     echo "----------------------"
     
     num_seq=0
