@@ -1,6 +1,6 @@
  for f in $@
 do 
-    echo "FASTA File Statistic" # Header 
+    echo "FASTA File Statistics" # Header 
     echo "----------------------"
 
     num_seq=$(grep '>' $f | wc -l | awk '{print $1}' ) 
