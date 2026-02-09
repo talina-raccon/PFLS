@@ -3,7 +3,7 @@ do
     echo "FASTA File Statistic" # Header 
     echo "----------------------"
 
-    num_seq=$(grep '>' $f | wc -l | awk '{print $1} ' ) 
+    num_seq=$(grep '>' $f | wc -l | awk '{print $1}' ) 
         echo "Number of sequences: $num_seq"
    
     total_leg_seq=$(awk '!/>/{total += gsub(/[AaTtGgCc]/, "")} END {print total}' $f)
